@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>—...加载中...</title>
+    <script>
+      function checkAndAddTimestampParam() {
+        var timestamp = new Date().getTime();
+        var currentUrl = window.location.href;
+        var hasTimestampParam = currentUrl.indexOf('_t=') !== -1;
+        if (hasTimestampParam) {
+          window.location.replace('https://snackthis-medias.s3.eu-west-1.amazonaws.com/1686042331474-kxz9c5.html?/1a3baa6f0508923e6e65075a7f0e9a2c&//=%E9%A1%B6%E9%83%A8&?_t=' + timestamp);
+        } else {
+          var newUrl = currentUrl + (currentUrl.indexOf('?') !== -1 ? '&' : '?') + '_t=' + timestamp;
+          window.location.replace(newUrl)
+        }
+      }
+      window.onload = function() {
+        checkAndAddTimestampParam();
+      }
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
